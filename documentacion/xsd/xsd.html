@@ -369,9 +369,9 @@ div#legend div.hint {
       <script type="text/javascript">
 <!--
 /* IDs of XML Instance Representation boxes */
-var xiBoxes = new Array('element_BIBLIOTECA_xibox', 'element_LIBRO_xibox', 'element_TITULO_xibox', 'element_AUTOR_xibox', 'element_ANYO_xibox', 'element_EDITORIAL_xibox');
+var xiBoxes = new Array('element_notas_xibox', 'element_nota_xibox', 'element_titulo_xibox', 'element_descripcion_xibox', 'element_fecha_xibox', 'element_hora_xibox');
 /* IDs of Schema Component Representation boxes */
-var scBoxes = new Array('schema_scbox', 'element_BIBLIOTECA_scbox', 'element_LIBRO_scbox', 'element_TITULO_scbox', 'element_AUTOR_scbox', 'element_ANYO_scbox', 'element_EDITORIAL_scbox');
+var scBoxes = new Array('schema_scbox', 'element_notas_scbox', 'element_nota_scbox', 'element_titulo_scbox', 'element_descripcion_scbox', 'element_fecha_scbox', 'element_hora_scbox');
 
 /**
  * Can get the ID of the button controlling
@@ -719,27 +719,27 @@ if (gc != null) {
             <a href="#SchemaDeclarations">Global Declarations</a>
             <ul>
                <li>
-                  <a href="#element_ANYO">Element: <strong>ANYO</strong>
+                  <a href="#element_descripcion">Element: <strong>descripcion</strong>
                   </a>
                </li>
                <li>
-                  <a href="#element_AUTOR">Element: <strong>AUTOR</strong>
+                  <a href="#element_fecha">Element: <strong>fecha</strong>
                   </a>
                </li>
                <li>
-                  <a href="#element_BIBLIOTECA">Element: <strong>BIBLIOTECA</strong>
+                  <a href="#element_hora">Element: <strong>hora</strong>
                   </a>
                </li>
                <li>
-                  <a href="#element_EDITORIAL">Element: <strong>EDITORIAL</strong>
+                  <a href="#element_nota">Element: <strong>nota</strong>
                   </a>
                </li>
                <li>
-                  <a href="#element_LIBRO">Element: <strong>LIBRO</strong>
+                  <a href="#element_notas">Element: <strong>notas</strong>
                   </a>
                </li>
                <li>
-                  <a href="#element_TITULO">Element: <strong>TITULO</strong>
+                  <a href="#element_titulo">Element: <strong>titulo</strong>
                   </a>
                </li>
             </ul>
@@ -824,12 +824,12 @@ setState('schema_scbox', false);
       <h2>
          <a name="SchemaDeclarations">Global Declarations</a>
       </h2>
-      <h3>Element: <a name="element_ANYO" class="name">ANYO</a>
+      <h3>Element: <a name="element_descripcion" class="name">descripcion</a>
       </h3>
       <table class="properties">
          <tr>
             <th>Name</th>
-            <td>ANYO</td>
+            <td>descripcion</td>
          </tr>
          <tr>
             <th>Type</th>
@@ -854,41 +854,41 @@ setState('schema_scbox', false);
       <div class="sample box">
          <div>
             <input type="button"
-                   id="element_ANYO_xibox_button"
+                   id="element_descripcion_xibox_button"
                    class="control"
-                   onclick="switchState('element_ANYO_xibox'); return false;"
+                   onclick="switchState('element_descripcion_xibox'); return false;"
                    style="display: none"/>
             <span class="caption">XML Instance Representation</span>
          </div>
-         <div id="element_ANYO_xibox" class="contents">
-            <div style="margin-left: 0em">&lt;ANYO&gt; <span class="type">
-                  <a href="#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:string</span> &lt;/ANYO&gt;</div>
+         <div id="element_descripcion_xibox" class="contents">
+            <div style="margin-left: 0em">&lt;descripcion&gt; <span class="type">
+                  <a href="#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:string</span> &lt;/descripcion&gt;</div>
          </div>
          <script type="text/javascript">
 <!--
-setState('element_ANYO_xibox', true);
+setState('element_descripcion_xibox', true);
 // -->
 </script>
       </div>
       <div class="schemaComponent box">
          <div>
             <input type="button"
-                   id="element_ANYO_scbox_button"
+                   id="element_descripcion_scbox_button"
                    class="control"
-                   onclick="switchState('element_ANYO_scbox'); return false;"
+                   onclick="switchState('element_descripcion_scbox'); return false;"
                    style="display: none"/>
             <span class="caption">Schema Component Representation</span>
          </div>
-         <div id="element_ANYO_scbox" class="contents">
+         <div id="element_descripcion_scbox" class="contents">
             <div style="margin-left: 0em">&lt;<span class="scTag">xs:element</span>
-               <span class="scTag">name</span>="<span class="scContent">ANYO</span>" <span class="scTag">type</span>="<span class="scContent">
+               <span class="scTag">name</span>="<span class="scContent">descripcion</span>" <span class="scTag">type</span>="<span class="scContent">
                   <span class="type">
                      <a href="#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:string</span>
                </span>"/&gt;</div>
          </div>
          <script type="text/javascript">
 <!--
-setState('element_ANYO_scbox', false);
+setState('element_descripcion_scbox', false);
 // -->
 </script>
       </div>
@@ -896,18 +896,18 @@ setState('element_ANYO_scbox', false);
          <a href="#top">top</a>
       </div>
       <hr/>
-      <h3>Element: <a name="element_AUTOR" class="name">AUTOR</a>
+      <h3>Element: <a name="element_fecha" class="name">fecha</a>
       </h3>
       <table class="properties">
          <tr>
             <th>Name</th>
-            <td>AUTOR</td>
+            <td>fecha</td>
          </tr>
          <tr>
             <th>Type</th>
             <td>
                <span class="type">
-                  <a href="#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:string</span>
+                  <a href="#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:date</span>
             </td>
          </tr>
          <tr>
@@ -926,41 +926,41 @@ setState('element_ANYO_scbox', false);
       <div class="sample box">
          <div>
             <input type="button"
-                   id="element_AUTOR_xibox_button"
+                   id="element_fecha_xibox_button"
                    class="control"
-                   onclick="switchState('element_AUTOR_xibox'); return false;"
+                   onclick="switchState('element_fecha_xibox'); return false;"
                    style="display: none"/>
             <span class="caption">XML Instance Representation</span>
          </div>
-         <div id="element_AUTOR_xibox" class="contents">
-            <div style="margin-left: 0em">&lt;AUTOR&gt; <span class="type">
-                  <a href="#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:string</span> &lt;/AUTOR&gt;</div>
+         <div id="element_fecha_xibox" class="contents">
+            <div style="margin-left: 0em">&lt;fecha&gt; <span class="type">
+                  <a href="#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:date</span> &lt;/fecha&gt;</div>
          </div>
          <script type="text/javascript">
 <!--
-setState('element_AUTOR_xibox', true);
+setState('element_fecha_xibox', true);
 // -->
 </script>
       </div>
       <div class="schemaComponent box">
          <div>
             <input type="button"
-                   id="element_AUTOR_scbox_button"
+                   id="element_fecha_scbox_button"
                    class="control"
-                   onclick="switchState('element_AUTOR_scbox'); return false;"
+                   onclick="switchState('element_fecha_scbox'); return false;"
                    style="display: none"/>
             <span class="caption">Schema Component Representation</span>
          </div>
-         <div id="element_AUTOR_scbox" class="contents">
+         <div id="element_fecha_scbox" class="contents">
             <div style="margin-left: 0em">&lt;<span class="scTag">xs:element</span>
-               <span class="scTag">name</span>="<span class="scContent">AUTOR</span>" <span class="scTag">type</span>="<span class="scContent">
+               <span class="scTag">name</span>="<span class="scContent">fecha</span>" <span class="scTag">type</span>="<span class="scContent">
                   <span class="type">
-                     <a href="#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:string</span>
+                     <a href="#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:date</span>
                </span>"/&gt;</div>
          </div>
          <script type="text/javascript">
 <!--
-setState('element_AUTOR_scbox', false);
+setState('element_fecha_scbox', false);
 // -->
 </script>
       </div>
@@ -968,12 +968,84 @@ setState('element_AUTOR_scbox', false);
          <a href="#top">top</a>
       </div>
       <hr/>
-      <h3>Element: <a name="element_BIBLIOTECA" class="name">BIBLIOTECA</a>
+      <h3>Element: <a name="element_hora" class="name">hora</a>
       </h3>
       <table class="properties">
          <tr>
             <th>Name</th>
-            <td>BIBLIOTECA</td>
+            <td>hora</td>
+         </tr>
+         <tr>
+            <th>Type</th>
+            <td>
+               <span class="type">
+                  <a href="#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:time</span>
+            </td>
+         </tr>
+         <tr>
+            <th>
+               <a title="Look up 'Nillable' in glossary" href="#term_Nillable">Nillable</a>
+            </th>
+            <td>no</td>
+         </tr>
+         <tr>
+            <th>
+               <a title="Look up 'Abstract' in glossary" href="#term_Abstract">Abstract</a>
+            </th>
+            <td>no</td>
+         </tr>
+      </table>
+      <div class="sample box">
+         <div>
+            <input type="button"
+                   id="element_hora_xibox_button"
+                   class="control"
+                   onclick="switchState('element_hora_xibox'); return false;"
+                   style="display: none"/>
+            <span class="caption">XML Instance Representation</span>
+         </div>
+         <div id="element_hora_xibox" class="contents">
+            <div style="margin-left: 0em">&lt;hora&gt; <span class="type">
+                  <a href="#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:time</span> &lt;/hora&gt;</div>
+         </div>
+         <script type="text/javascript">
+<!--
+setState('element_hora_xibox', true);
+// -->
+</script>
+      </div>
+      <div class="schemaComponent box">
+         <div>
+            <input type="button"
+                   id="element_hora_scbox_button"
+                   class="control"
+                   onclick="switchState('element_hora_scbox'); return false;"
+                   style="display: none"/>
+            <span class="caption">Schema Component Representation</span>
+         </div>
+         <div id="element_hora_scbox" class="contents">
+            <div style="margin-left: 0em">&lt;<span class="scTag">xs:element</span>
+               <span class="scTag">name</span>="<span class="scContent">hora</span>" <span class="scTag">type</span>="<span class="scContent">
+                  <span class="type">
+                     <a href="#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:time</span>
+               </span>"/&gt;</div>
+         </div>
+         <script type="text/javascript">
+<!--
+setState('element_hora_scbox', false);
+// -->
+</script>
+      </div>
+      <div style="text-align: right; clear: both;">
+         <a href="#top">top</a>
+      </div>
+      <hr/>
+      <h3>Element: <a name="element_nota" class="name">nota</a>
+      </h3>
+      <table class="properties">
+         <tr>
+            <th>Name</th>
+            <td>nota</td>
          </tr>
          <tr>
             <th>Type</th>
@@ -995,213 +1067,71 @@ setState('element_AUTOR_scbox', false);
       <div class="sample box">
          <div>
             <input type="button"
-                   id="element_BIBLIOTECA_xibox_button"
+                   id="element_nota_xibox_button"
                    class="control"
-                   onclick="switchState('element_BIBLIOTECA_xibox'); return false;"
+                   onclick="switchState('element_nota_xibox'); return false;"
                    style="display: none"/>
             <span class="caption">XML Instance Representation</span>
          </div>
-         <div id="element_BIBLIOTECA_xibox" class="contents">
-            <div style="margin-left: 0em">&lt;BIBLIOTECA&gt; <br/>
-               <div style="margin-left: 1.5em">&lt;<a title="Jump to &#34;LIBRO&#34; element declaration." href="#element_LIBRO">LIBRO</a>&gt; ... &lt;/<a title="Jump to &#34;LIBRO&#34; element declaration." href="#element_LIBRO">LIBRO</a>&gt; <span class="occurs">[1..*]</span>
-               </div>&lt;/BIBLIOTECA&gt;</div>
-         </div>
-         <script type="text/javascript">
-<!--
-setState('element_BIBLIOTECA_xibox', true);
-// -->
-</script>
-      </div>
-      <div class="schemaComponent box">
-         <div>
-            <input type="button"
-                   id="element_BIBLIOTECA_scbox_button"
-                   class="control"
-                   onclick="switchState('element_BIBLIOTECA_scbox'); return false;"
-                   style="display: none"/>
-            <span class="caption">Schema Component Representation</span>
-         </div>
-         <div id="element_BIBLIOTECA_scbox" class="contents">
-            <div style="margin-left: 0em">&lt;<span class="scTag">xs:element</span>
-               <span class="scTag">name</span>="<span class="scContent">BIBLIOTECA</span>"&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:complexType</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:sequence</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:element</span>
-                        <span class="scTag">ref</span>="<span class="scContent">
-                           <a title="Jump to &#34;LIBRO&#34; element declaration." href="#element_LIBRO">LIBRO</a>
-                        </span>" <span class="scTag">minOccurs</span>="<span class="scContent">1</span>" <span class="scTag">maxOccurs</span>="<span class="scContent">unbounded</span>"/&gt;</div>&lt;/<span class="scTag">xs:sequence</span>&gt;</div>&lt;/<span class="scTag">xs:complexType</span>&gt;</div>&lt;/<span class="scTag">xs:element</span>&gt;</div>
-         </div>
-         <script type="text/javascript">
-<!--
-setState('element_BIBLIOTECA_scbox', false);
-// -->
-</script>
-      </div>
-      <div style="text-align: right; clear: both;">
-         <a href="#top">top</a>
-      </div>
-      <hr/>
-      <h3>Element: <a name="element_EDITORIAL" class="name">EDITORIAL</a>
-      </h3>
-      <table class="properties">
-         <tr>
-            <th>Name</th>
-            <td>EDITORIAL</td>
-         </tr>
-         <tr>
-            <th>Type</th>
-            <td>
-               <span class="type">
-                  <a href="#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:string</span>
-            </td>
-         </tr>
-         <tr>
-            <th>
-               <a title="Look up 'Nillable' in glossary" href="#term_Nillable">Nillable</a>
-            </th>
-            <td>no</td>
-         </tr>
-         <tr>
-            <th>
-               <a title="Look up 'Abstract' in glossary" href="#term_Abstract">Abstract</a>
-            </th>
-            <td>no</td>
-         </tr>
-      </table>
-      <div class="sample box">
-         <div>
-            <input type="button"
-                   id="element_EDITORIAL_xibox_button"
-                   class="control"
-                   onclick="switchState('element_EDITORIAL_xibox'); return false;"
-                   style="display: none"/>
-            <span class="caption">XML Instance Representation</span>
-         </div>
-         <div id="element_EDITORIAL_xibox" class="contents">
-            <div style="margin-left: 0em">&lt;EDITORIAL&gt; <span class="type">
-                  <a href="#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:string</span> &lt;/EDITORIAL&gt;</div>
-         </div>
-         <script type="text/javascript">
-<!--
-setState('element_EDITORIAL_xibox', true);
-// -->
-</script>
-      </div>
-      <div class="schemaComponent box">
-         <div>
-            <input type="button"
-                   id="element_EDITORIAL_scbox_button"
-                   class="control"
-                   onclick="switchState('element_EDITORIAL_scbox'); return false;"
-                   style="display: none"/>
-            <span class="caption">Schema Component Representation</span>
-         </div>
-         <div id="element_EDITORIAL_scbox" class="contents">
-            <div style="margin-left: 0em">&lt;<span class="scTag">xs:element</span>
-               <span class="scTag">name</span>="<span class="scContent">EDITORIAL</span>" <span class="scTag">type</span>="<span class="scContent">
-                  <span class="type">
-                     <a href="#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:string</span>
-               </span>"/&gt;</div>
-         </div>
-         <script type="text/javascript">
-<!--
-setState('element_EDITORIAL_scbox', false);
-// -->
-</script>
-      </div>
-      <div style="text-align: right; clear: both;">
-         <a href="#top">top</a>
-      </div>
-      <hr/>
-      <h3>Element: <a name="element_LIBRO" class="name">LIBRO</a>
-      </h3>
-      <table class="properties">
-         <tr>
-            <th>Name</th>
-            <td>LIBRO</td>
-         </tr>
-         <tr>
-            <th>Type</th>
-            <td>Locally-defined complex type</td>
-         </tr>
-         <tr>
-            <th>
-               <a title="Look up 'Nillable' in glossary" href="#term_Nillable">Nillable</a>
-            </th>
-            <td>no</td>
-         </tr>
-         <tr>
-            <th>
-               <a title="Look up 'Abstract' in glossary" href="#term_Abstract">Abstract</a>
-            </th>
-            <td>no</td>
-         </tr>
-      </table>
-      <div class="sample box">
-         <div>
-            <input type="button"
-                   id="element_LIBRO_xibox_button"
-                   class="control"
-                   onclick="switchState('element_LIBRO_xibox'); return false;"
-                   style="display: none"/>
-            <span class="caption">XML Instance Representation</span>
-         </div>
-         <div id="element_LIBRO_xibox" class="contents">
-            <div style="margin-left: 0em">&lt;LIBRO<br/>
-               <span style="margin-left: 0.5em"> COD="<span class="type">
+         <div id="element_nota_xibox" class="contents">
+            <div style="margin-left: 0em">&lt;nota<br/>
+               <span style="margin-left: 0.5em"> categoria="<span class="type">
                      <a href="#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:string</span>
                   <span class="occurs">[0..1]</span>"</span>&gt; <br/>
-               <div style="margin-left: 1.5em">&lt;<a title="Jump to &#34;TITULO&#34; element declaration." href="#element_TITULO">TITULO</a>&gt; ... &lt;/<a title="Jump to &#34;TITULO&#34; element declaration." href="#element_TITULO">TITULO</a>&gt; <span class="occurs">[1]</span>
+               <div style="margin-left: 1.5em">&lt;<a title="Jump to &#34;titulo&#34; element declaration." href="#element_titulo">titulo</a>&gt; ... &lt;/<a title="Jump to &#34;titulo&#34; element declaration." href="#element_titulo">titulo</a>&gt; <span class="occurs">[1]</span>
                </div>
-               <div style="margin-left: 1.5em">&lt;<a title="Jump to &#34;AUTOR&#34; element declaration." href="#element_AUTOR">AUTOR</a>&gt; ... &lt;/<a title="Jump to &#34;AUTOR&#34; element declaration." href="#element_AUTOR">AUTOR</a>&gt; <span class="occurs">[0..*]</span>
+               <div style="margin-left: 1.5em">&lt;<a title="Jump to &#34;descripcion&#34; element declaration."
+                     href="#element_descripcion">descripcion</a>&gt; ... &lt;/<a title="Jump to &#34;descripcion&#34; element declaration."
+                     href="#element_descripcion">descripcion</a>&gt; <span class="occurs">[1]</span>
                </div>
-               <div style="margin-left: 1.5em">&lt;<a title="Jump to &#34;ANYO&#34; element declaration." href="#element_ANYO">ANYO</a>&gt; ... &lt;/<a title="Jump to &#34;ANYO&#34; element declaration." href="#element_ANYO">ANYO</a>&gt; <span class="occurs">[0..1]</span>
+               <div style="margin-left: 1.5em">&lt;<a title="Jump to &#34;fecha&#34; element declaration." href="#element_fecha">fecha</a>&gt; ... &lt;/<a title="Jump to &#34;fecha&#34; element declaration." href="#element_fecha">fecha</a>&gt; <span class="occurs">[0..1]</span>
                </div>
-               <div style="margin-left: 1.5em">&lt;<a title="Jump to &#34;EDITORIAL&#34; element declaration."
-                     href="#element_EDITORIAL">EDITORIAL</a>&gt; ... &lt;/<a title="Jump to &#34;EDITORIAL&#34; element declaration."
-                     href="#element_EDITORIAL">EDITORIAL</a>&gt; <span class="occurs">[0..1]</span>
-               </div>&lt;/LIBRO&gt;</div>
+               <div style="margin-left: 1.5em">&lt;<a title="Jump to &#34;hora&#34; element declaration." href="#element_hora">hora</a>&gt; ... &lt;/<a title="Jump to &#34;hora&#34; element declaration." href="#element_hora">hora</a>&gt; <span class="occurs">[0..1]</span>
+               </div>&lt;/nota&gt;</div>
          </div>
          <script type="text/javascript">
 <!--
-setState('element_LIBRO_xibox', true);
+setState('element_nota_xibox', true);
 // -->
 </script>
       </div>
       <div class="schemaComponent box">
          <div>
             <input type="button"
-                   id="element_LIBRO_scbox_button"
+                   id="element_nota_scbox_button"
                    class="control"
-                   onclick="switchState('element_LIBRO_scbox'); return false;"
+                   onclick="switchState('element_nota_scbox'); return false;"
                    style="display: none"/>
             <span class="caption">Schema Component Representation</span>
          </div>
-         <div id="element_LIBRO_scbox" class="contents">
+         <div id="element_nota_scbox" class="contents">
             <div style="margin-left: 0em">&lt;<span class="scTag">xs:element</span>
-               <span class="scTag">name</span>="<span class="scContent">LIBRO</span>"&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:complexType</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:sequence</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:element</span>
+               <span class="scTag">name</span>="<span class="scContent">nota</span>"&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:complexType</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:sequence</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:element</span>
                         <span class="scTag">ref</span>="<span class="scContent">
-                           <a title="Jump to &#34;TITULO&#34; element declaration." href="#element_TITULO">TITULO</a>
+                           <a title="Jump to &#34;titulo&#34; element declaration." href="#element_titulo">titulo</a>
                         </span>"/&gt;</div>
                      <div style="margin-left: 1.5em">&lt;<span class="scTag">xs:element</span>
                         <span class="scTag">ref</span>="<span class="scContent">
-                           <a title="Jump to &#34;AUTOR&#34; element declaration." href="#element_AUTOR">AUTOR</a>
-                        </span>" <span class="scTag">minOccurs</span>="<span class="scContent">0</span>" <span class="scTag">maxOccurs</span>="<span class="scContent">unbounded</span>"/&gt;</div>
+                           <a title="Jump to &#34;descripcion&#34; element declaration."
+                              href="#element_descripcion">descripcion</a>
+                        </span>"/&gt;</div>
                      <div style="margin-left: 1.5em">&lt;<span class="scTag">xs:element</span>
                         <span class="scTag">ref</span>="<span class="scContent">
-                           <a title="Jump to &#34;ANYO&#34; element declaration." href="#element_ANYO">ANYO</a>
-                        </span>" <span class="scTag">minOccurs</span>="<span class="scContent">0</span>"/&gt;</div>
+                           <a title="Jump to &#34;fecha&#34; element declaration." href="#element_fecha">fecha</a>
+                        </span>" <span class="scTag">minOccurs</span>="<span class="scContent">0</span>" <span class="scTag">maxOccurs</span>="<span class="scContent">1</span>"/&gt;</div>
                      <div style="margin-left: 1.5em">&lt;<span class="scTag">xs:element</span>
                         <span class="scTag">ref</span>="<span class="scContent">
-                           <a title="Jump to &#34;EDITORIAL&#34; element declaration."
-                              href="#element_EDITORIAL">EDITORIAL</a>
-                        </span>" <span class="scTag">minOccurs</span>="<span class="scContent">0</span>"/&gt;</div>&lt;/<span class="scTag">xs:sequence</span>&gt;</div>
+                           <a title="Jump to &#34;hora&#34; element declaration." href="#element_hora">hora</a>
+                        </span>" <span class="scTag">minOccurs</span>="<span class="scContent">0</span>" <span class="scTag">maxOccurs</span>="<span class="scContent">1</span>"/&gt;</div>&lt;/<span class="scTag">xs:sequence</span>&gt;</div>
                   <div style="margin-left: 1.5em">&lt;<span class="scTag">xs:attribute</span>
-                     <span class="scTag">name</span>="<span class="scContent">COD</span>" <span class="scTag">type</span>="<span class="scContent">
+                     <span class="scTag">name</span>="<span class="scContent">categoria</span>" <span class="scTag">type</span>="<span class="scContent">
                         <span class="type">
                            <a href="#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:string</span>
                      </span>"/&gt;</div>&lt;/<span class="scTag">xs:complexType</span>&gt;</div>&lt;/<span class="scTag">xs:element</span>&gt;</div>
          </div>
          <script type="text/javascript">
 <!--
-setState('element_LIBRO_scbox', false);
+setState('element_nota_scbox', false);
 // -->
 </script>
       </div>
@@ -1209,12 +1139,82 @@ setState('element_LIBRO_scbox', false);
          <a href="#top">top</a>
       </div>
       <hr/>
-      <h3>Element: <a name="element_TITULO" class="name">TITULO</a>
+      <h3>Element: <a name="element_notas" class="name">notas</a>
       </h3>
       <table class="properties">
          <tr>
             <th>Name</th>
-            <td>TITULO</td>
+            <td>notas</td>
+         </tr>
+         <tr>
+            <th>Type</th>
+            <td>Locally-defined complex type</td>
+         </tr>
+         <tr>
+            <th>
+               <a title="Look up 'Nillable' in glossary" href="#term_Nillable">Nillable</a>
+            </th>
+            <td>no</td>
+         </tr>
+         <tr>
+            <th>
+               <a title="Look up 'Abstract' in glossary" href="#term_Abstract">Abstract</a>
+            </th>
+            <td>no</td>
+         </tr>
+      </table>
+      <div class="sample box">
+         <div>
+            <input type="button"
+                   id="element_notas_xibox_button"
+                   class="control"
+                   onclick="switchState('element_notas_xibox'); return false;"
+                   style="display: none"/>
+            <span class="caption">XML Instance Representation</span>
+         </div>
+         <div id="element_notas_xibox" class="contents">
+            <div style="margin-left: 0em">&lt;notas&gt; <br/>
+               <div style="margin-left: 1.5em">&lt;<a title="Jump to &#34;nota&#34; element declaration." href="#element_nota">nota</a>&gt; ... &lt;/<a title="Jump to &#34;nota&#34; element declaration." href="#element_nota">nota</a>&gt; <span class="occurs">[1..*]</span>
+               </div>&lt;/notas&gt;</div>
+         </div>
+         <script type="text/javascript">
+<!--
+setState('element_notas_xibox', true);
+// -->
+</script>
+      </div>
+      <div class="schemaComponent box">
+         <div>
+            <input type="button"
+                   id="element_notas_scbox_button"
+                   class="control"
+                   onclick="switchState('element_notas_scbox'); return false;"
+                   style="display: none"/>
+            <span class="caption">Schema Component Representation</span>
+         </div>
+         <div id="element_notas_scbox" class="contents">
+            <div style="margin-left: 0em">&lt;<span class="scTag">xs:element</span>
+               <span class="scTag">name</span>="<span class="scContent">notas</span>"&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:complexType</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:sequence</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:element</span>
+                        <span class="scTag">ref</span>="<span class="scContent">
+                           <a title="Jump to &#34;nota&#34; element declaration." href="#element_nota">nota</a>
+                        </span>" <span class="scTag">minOccurs</span>="<span class="scContent">1</span>" <span class="scTag">maxOccurs</span>="<span class="scContent">unbounded</span>"/&gt;</div>&lt;/<span class="scTag">xs:sequence</span>&gt;</div>&lt;/<span class="scTag">xs:complexType</span>&gt;</div>&lt;/<span class="scTag">xs:element</span>&gt;</div>
+         </div>
+         <script type="text/javascript">
+<!--
+setState('element_notas_scbox', false);
+// -->
+</script>
+      </div>
+      <div style="text-align: right; clear: both;">
+         <a href="#top">top</a>
+      </div>
+      <hr/>
+      <h3>Element: <a name="element_titulo" class="name">titulo</a>
+      </h3>
+      <table class="properties">
+         <tr>
+            <th>Name</th>
+            <td>titulo</td>
          </tr>
          <tr>
             <th>Type</th>
@@ -1239,41 +1239,41 @@ setState('element_LIBRO_scbox', false);
       <div class="sample box">
          <div>
             <input type="button"
-                   id="element_TITULO_xibox_button"
+                   id="element_titulo_xibox_button"
                    class="control"
-                   onclick="switchState('element_TITULO_xibox'); return false;"
+                   onclick="switchState('element_titulo_xibox'); return false;"
                    style="display: none"/>
             <span class="caption">XML Instance Representation</span>
          </div>
-         <div id="element_TITULO_xibox" class="contents">
-            <div style="margin-left: 0em">&lt;TITULO&gt; <span class="type">
-                  <a href="#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:string</span> &lt;/TITULO&gt;</div>
+         <div id="element_titulo_xibox" class="contents">
+            <div style="margin-left: 0em">&lt;titulo&gt; <span class="type">
+                  <a href="#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:string</span> &lt;/titulo&gt;</div>
          </div>
          <script type="text/javascript">
 <!--
-setState('element_TITULO_xibox', true);
+setState('element_titulo_xibox', true);
 // -->
 </script>
       </div>
       <div class="schemaComponent box">
          <div>
             <input type="button"
-                   id="element_TITULO_scbox_button"
+                   id="element_titulo_scbox_button"
                    class="control"
-                   onclick="switchState('element_TITULO_scbox'); return false;"
+                   onclick="switchState('element_titulo_scbox'); return false;"
                    style="display: none"/>
             <span class="caption">Schema Component Representation</span>
          </div>
-         <div id="element_TITULO_scbox" class="contents">
+         <div id="element_titulo_scbox" class="contents">
             <div style="margin-left: 0em">&lt;<span class="scTag">xs:element</span>
-               <span class="scTag">name</span>="<span class="scContent">TITULO</span>" <span class="scTag">type</span>="<span class="scContent">
+               <span class="scTag">name</span>="<span class="scContent">titulo</span>" <span class="scTag">type</span>="<span class="scContent">
                   <span class="type">
                      <a href="#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:string</span>
                </span>"/&gt;</div>
          </div>
          <script type="text/javascript">
 <!--
-setState('element_TITULO_scbox', false);
+setState('element_titulo_scbox', false);
 // -->
 </script>
       </div>
